@@ -25,7 +25,9 @@ The existing `ShuaiShao88/shuaishao.github.io` repository has a different name. 
 - `assets/shuai-shao.jpg`: portrait.
 - `robots.txt` and `sitemap.xml`: search engine discovery for the selected address.
 
-The CV page’s **Print / Save PDF** button opens the browser print dialog. Select **Save as PDF** to download a copy.
+The CV page’s **Download PDF** button saves `assets/Shuai_Shao_CV.pdf` directly. The PDF uses US Letter pages, generous margins, Times New Roman, and page numbers.
+
+After editing `cv.html`, regenerate the PDF with `python3 scripts/build_cv_pdf.py` before publishing. The script requires ReportLab (`python3 -m pip install reportlab`). It embeds Times New Roman when the font is installed in the standard macOS location, and uses Times as a fallback on other systems. Review the regenerated PDF to check page breaks before publishing it.
 
 ## Content sources
 

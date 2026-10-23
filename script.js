@@ -101,4 +101,3 @@ if ('IntersectionObserver' in window && navigation) {
 }
 
 document.querySelector('#year')?.replaceChildren(String(new Date().getFullYear()));
-document.querySelector('#print-cv')?.addEventListener('click', () => window.print());
