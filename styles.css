@@ -66,5 +66,14 @@
   .cv-nav .button{font-size:14px;padding:8px;gap:8px}
 }
 
+
+/* Methods are grouped for readable scanning on desktop and phone screens. */
+.expertise-section{border-top:1px solid var(--line)}
+.expertise-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 40px;margin:0}
+.expertise-grid>div{border-top:1px solid var(--line);padding-top:20px;min-width:0}
+.expertise-grid dt{font-size:23px;font-weight:600;line-height:1.4;margin-bottom:12px}
+.expertise-grid dd{font-size:18px;line-height:1.85;color:var(--muted);margin:0}
+@media(max-width:620px){.expertise-grid{grid-template-columns:1fr;gap:26px}.expertise-grid dt{font-size:23px}.expertise-grid dd{font-size:18px}}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 @media print{@page{size:A4;margin:15mm}body{background:white;color:#111}.site-header,.site-footer,.cv-nav,#toast,.skip-link{display:none!important}.cv-document{max-width:none;padding:0;margin:0}.cv-title{margin-bottom:20px;padding-bottom:15px}.cv-title h1{font-size:46px;letter-spacing:-1px}.cv-title .cv-role{font-size:16px}.cv-title .cv-contact{font-size:14px}.cv-section{margin-top:20px}.cv-section h2{font-size:14px;break-after:avoid}.cv-section h3{font-size:14px;break-after:avoid}.cv-section p,.cv-section li{font-size:14px;line-height:1.55}.cv-section .cv-dates,.cv-footnote{font-size:14px}.cv-entry{break-inside:avoid}.cv-list li{break-inside:avoid;margin-bottom:9px}a{color:inherit}.cv-footnote{margin-top:20px}}
