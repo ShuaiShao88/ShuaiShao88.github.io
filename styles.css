@@ -24,7 +24,7 @@
 .focus-inner a{display:block;flex:none;max-width:none}
 .focus-inner p span{margin-inline:0;flex:none}
 .focus-inner p:focus-visible{outline:2px solid var(--green);outline-offset:6px}
-@media(min-width:1024px){.focus-inner{width:min(1500px,calc(100% - 64px))}.focus-inner p{font-size:clamp(23px,2.1vw,28px)}}
+@media(min-width:1024px){.focus-inner p{font-size:clamp(23px,2.1vw,28px)}}
 .focus-inner a:hover{text-decoration:underline;text-underline-offset:5px}
 .research-art{min-height:215px}
 .diagram-small{padding-inline:10px;line-height:1.35;bottom:15px}
