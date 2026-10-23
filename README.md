@@ -31,4 +31,4 @@ The CV page’s **Print / Save PDF** button opens the browser print dialog. Sele
 
 The supplied `Shuai_Shao_Academic_CV.docx` provides the academic details and October 2026 publication statuses. The [UNC Charlotte profile](https://datasciencephd.charlotte.edu/shuai-shao/) provides the portrait, university email, and background. The portrait is stored locally so it does not depend on an external image request. Publication statuses remain explicit; in-press papers are not described as already published, and the special issue proposal is labeled as a proposal.
 
-The design loads DM Sans and Libre Caslon Display from Google Fonts, with Arial and Georgia fallbacks. All navigation, research disclosures, and CV text remain usable if external fonts are unavailable. Publication filters and citation copying use browser JavaScript.
+The design uses Times New Roman throughout, with Times and a generic serif as fallbacks. Text sizes are enlarged for readability on desktop and phone screens. No external font request is needed. Publication filters and citation copying use browser JavaScript.
