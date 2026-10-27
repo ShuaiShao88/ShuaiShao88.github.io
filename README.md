@@ -27,7 +27,13 @@ The existing `ShuaiShao88/shuaishao.github.io` repository has a different name. 
 
 The CV page’s **Download PDF** button saves `assets/Shuai_Shao_CV.pdf` directly. The PDF uses US Letter pages, generous margins, Times New Roman, and page numbers.
 
-After editing `cv.html`, regenerate the PDF with `python3 scripts/build_cv_pdf.py` before publishing. The script requires ReportLab (`python3 -m pip install reportlab`). It embeds Times New Roman when the font is installed in the standard macOS location, and uses Times as a fallback on other systems. Review the regenerated PDF to check page breaks before publishing it.
+After changing CV content in `cv.html`, regenerate the PDF with `python3 scripts/build_cv_pdf.py` before publishing. The script requires ReportLab (`python3 -m pip install reportlab`). It embeds Times New Roman when the font is installed in the standard macOS location, and uses Times as a fallback on other systems. Review the regenerated PDF to check page breaks before publishing it.
+
+## Visitor statistics
+
+Cloudflare Web Analytics is installed on the homepage and CV page for `shuaishao88.github.io`. Sign into the Cloudflare dashboard, open **Web Analytics**, and select this site to see visits, page views, and traffic sources. It can take a few minutes for new visits to appear.
+
+The `data-cf-beacon` value in each HTML page is a public site identifier from Cloudflare's **Manage site** installation snippet. If replacing it, update both pages. This tracks HTML page views; the PDF file itself does not run the analytics script.
 
 ## Content sources
 
