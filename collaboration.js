@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   const root = document.querySelector('#collaborations');
-  if (!root || !window.portfolioNetwork) return;
+  if (!root || root.hidden || !window.portfolioNetwork) return;
 
   const escape = value => String(value).replace(/[&<>"']/g, character =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character])

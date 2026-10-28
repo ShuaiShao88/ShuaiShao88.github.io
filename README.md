@@ -26,6 +26,8 @@ The existing `ShuaiShao88/shuaishao.github.io` repository has a different name. 
 - `assets/shuai-shao.jpg`: portrait.
 - `robots.txt` and `sitemap.xml`: search engine discovery for the selected address.
 
+The collaboration map is currently hidden for future use. To restore it, remove the `hidden` attribute from both `#collaborations` and its navigation link in `index.html`. Its markup, scripts, styles, and coauthor data are preserved; the hidden map does not initialize.
+
 The CV page’s **Download PDF** button saves `assets/Shuai_Shao_CV.pdf` directly. The PDF uses US Letter pages, generous margins, Times New Roman, and page numbers.
 
 After changing CV content in `cv.html`, regenerate the PDF with `python3 scripts/build_cv_pdf.py` before publishing. The script requires ReportLab (`python3 -m pip install reportlab`). It embeds Times New Roman when the font is installed in the standard macOS location, and uses Times as a fallback on other systems. Review the regenerated PDF to check page breaks before publishing it.
