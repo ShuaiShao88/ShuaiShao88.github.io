@@ -14,9 +14,11 @@
   <link rel="canonical" href="https://shuaishao88.github.io/">
   <title>Shuai Shao — Human-centered AI research</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261023-7">
-  <script src="data.js?v=20261023-4" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261028-1">
+  <script src="data.js?v=20261028-1" defer></script>
   <script src="script.js?v=20261023-7" defer></script>
+  <script src="collaboration-model.js?v=20261028-1" defer></script>
+  <script src="collaboration.js?v=20261028-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -57,10 +59,28 @@
       </div>
     </section>
     <section id="publications" class="publications-section" aria-labelledby="publications-title"><div class="wrap section">
-      <div class="section-heading"><div><p class="eyebrow section-number">02 / PUBLICATIONS</p><h2 id="publications-title">Work in writing.</h2></div><a class="text-link" href="cv.html#publications">Full academic CV <span aria-hidden="true">↗</span></a></div>
+      <div class="section-heading"><div><p class="eyebrow section-number">02 / PUBLICATIONS</p><h2 id="publications-title">Work in writing.</h2></div><div class="publication-links"><a class="text-link" href="#collaborations">Collaboration network <span aria-hidden="true">↓</span></a><a class="text-link" href="cv.html#publications">Full academic CV <span aria-hidden="true">↗</span></a></div></div>
       <div class="publications-toolbar"><div class="filters" aria-label="Filter publications"><button class="filter active" data-filter="all" aria-pressed="true">All work</button><button class="filter" data-filter="published" aria-pressed="false">Published & in press</button><button class="filter" data-filter="review" aria-pressed="false">Under review</button></div><span id="publication-count" class="result-count" aria-live="polite"></span></div>
       <div id="publication-list" class="publication-list"></div><noscript><p>Read the complete publication list in my <a href="cv.html#publications">academic CV</a>. Enable JavaScript to use the publication filters.</p></noscript>
       <p class="publication-note">Publication status follows my October 2026 CV. Manuscripts under review are listed separately from accepted work.</p>
+      <div class="collaboration-block" id="collaborations" role="region" aria-labelledby="collaboration-title">
+        <div class="network-heading"><div><p class="eyebrow">IDEAS GROW THROUGH COLLABORATION</p><h3 id="collaboration-title">Collaboration network.</h3></div><p id="network-summary" class="network-summary" aria-live="polite"></p></div>
+        <p class="network-intro">Explore the coauthors behind my work. Select a circle or switch to the table to see the works we share.</p>
+        <div class="network-controls">
+          <label for="network-scope">Include <select id="network-scope"><option value="all">All listed work</option><option value="published">Published &amp; in press</option><option value="review">Under review &amp; proposals</option></select></label>
+          <div class="network-view-switch" role="group" aria-label="Collaboration view"><button type="button" data-network-view="diagram" aria-controls="network-diagram-view" aria-pressed="true">Diagram</button><button type="button" data-network-view="table" aria-controls="network-table-view" aria-pressed="false">Table</button></div>
+        </div>
+        <div class="network-layout">
+          <div class="network-visual">
+            <div id="network-diagram-view"><div class="network-canvas" tabindex="0" role="group" aria-label="Coauthor diagram. Scroll horizontally to explore on smaller screens."><div id="network-stage" class="network-stage"></div></div><p class="network-mobile-hint">Scroll sideways to explore, or use the table view.</p><div class="network-legend"><span><i class="network-key-published" aria-hidden="true"></i>Published / in press</span><span><i class="network-key-review" aria-hidden="true"></i>Under review / proposal only</span></div><p class="network-reading-guide">Larger coauthor circles mean more shared works with me. Lines connect coauthors; thicker lines mean more shared works.</p></div>
+            <div id="network-table-view" hidden><div class="network-table-wrap"><table class="network-table"><caption>Coauthors and shared works in the selected publication group. Select a name to explore.</caption><thead><tr><th scope="col">Coauthor</th><th scope="col">Shared works</th></tr></thead><tbody id="network-table-body"></tbody></table></div></div>
+          </div>
+          <aside id="network-detail" class="network-detail" aria-labelledby="network-detail-title"></aside>
+        </div>
+        <p class="network-source-note">Based on the publication list above, including manuscripts and proposals under review when selected. Names follow the listed author credits.</p>
+        <p id="network-announcement" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></p>
+        <noscript><p>Enable JavaScript to explore the collaboration network, or read the coauthor names in my <a class="text-link" href="cv.html#publications">academic CV</a>.</p></noscript>
+      </div>
     </div></section>
     <section id="experience" class="section wrap" aria-labelledby="experience-title">
       <div class="section-heading"><div><p class="eyebrow section-number">03 / EXPERIENCE</p><h2 id="experience-title">Research &amp; Teaching Experience</h2></div><p class="section-intro">Appointments, contributions, and teaching at UNC Charlotte.</p></div>

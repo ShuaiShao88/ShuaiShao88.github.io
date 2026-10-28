@@ -1,6 +1,6 @@
 # Shuai Shao’s portfolio
 
-A responsive academic portfolio for GitHub Pages. Includes research summaries, filterable publications, citation copying, teaching and research experience, machine learning expertise, contact links, and a printable academic CV. No installation or build step is needed.
+A responsive academic portfolio for GitHub Pages. Includes research summaries, filterable publications, an interactive coauthor network, citation copying, teaching and research experience, machine learning expertise, contact links, and a printable academic CV. No installation or build step is needed.
 
 ## Preview
 
@@ -19,7 +19,8 @@ The existing `ShuaiShao88/shuaishao.github.io` repository has a different name. 
 ## Edit content
 
 - `index.html`: biography, research descriptions, experience, teaching, machine learning expertise, education, and contact information.
-- `data.js`: publications, statuses, links, and copyable citations.
+- `data.js`: publications, statuses, links, copyable citations, and coauthor labels. Keep each work's `authorIds` in credited order and add new people to `portfolioPeople` when needed. Use `kind: 'proposal'` for proposals.
+- `collaboration-model.js` and `collaboration.js`: shared-work counts and the interactive diagram, table, filters, and coauthor details. The map updates from `data.js`; it does not depend on an external researcher database. Run its data checks with `node --test tests/collaboration.test.cjs`.
 - `cv.html`: the complete printable academic CV. Update its publication section when changing `data.js`.
 - `styles.css`: colors, typography, responsive layout, and print styles.
 - `assets/shuai-shao.jpg`: portrait.
